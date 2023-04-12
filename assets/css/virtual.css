@@ -99,6 +99,11 @@ a:hover, a:active {
     z-index: 99;
 }
 
+.grid-item {
+    display: none;
+  }
+  
+
 /* 
     2. Button
 */

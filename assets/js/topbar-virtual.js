@@ -8,8 +8,9 @@ $(function() {
   $('.filterable-button').on( 'click', 'button', function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
-  });
   
+  });
+
   $('.testi-carousel').owlCarousel({
     margin: 0,
     loop: true,
