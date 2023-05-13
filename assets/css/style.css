@@ -860,13 +860,12 @@ a:hover, a:active {
 	position: absolute;
 	top: auto;
 	left: 50%;
-	border: solid transparent;
-	height: 0;
+    height: 0;
 	width: 0;
 	pointer-events: none;
-	border-bottom-color: #f0f3f8;
-	border-width: 15px;
-	margin: -20px 0 0 -15px;
+    border: 15px solid transparent;
+    border-bottom-color: #f0f3f8;
+    margin: -20px 0 0 -15px;
 }
 
 .og-content {
@@ -926,7 +925,7 @@ a:hover, a:active {
 	background: #333;
 }
 
-.og-fullimg,
+.og-full-img,
 .og-details {
 	width: 100%;
 	max-width: 100%;
@@ -934,13 +933,13 @@ a:hover, a:active {
 	overflow: hidden;
 }
 
-.og-fullimg {
+.og-full-img {
     display: none;
     padding: 8px 0;
     text-align: center;
 }
 
-.og-fullimg img {
+.og-full-img img {
 	max-height: 100%;
     max-width: 100%;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -1001,12 +1000,12 @@ a:hover, a:active {
 		flex-direction: row;
 	}
 
-	.og-fullimg,
+	.og-full-img,
 	.og-details {
 		max-width: 50%;
     }
 
-    .og-fullimg {
+    .og-full-img {
         display: block;
     }
 
@@ -1411,13 +1410,13 @@ a:hover, a:active {
     width: var(--sizeX);
     height: var(--sizeY);
     top: 25%;
-    margin-left: var(sizeX / 2);
+    margin-left: calc(var(--sizeX) / 2);
     border: calc(var(--sizeX) / 10) solid var(--color);
     border-radius: 50px;
     box-sizing: border-box;
     margin-bottom: 16px;
   }
-  
+
   .scroll-down::before {
     content: "";
     position: absolute;
@@ -1430,7 +1429,7 @@ a:hover, a:active {
     border-radius: 100%;
     animation: scroll-down-anim 2s infinite;
     box-sizing: border-box;
-    box-shadow: 0px -5px 3px 1px #ffffff66;
+    box-shadow: 0 -5px 3px 1px #ffffff66;
   }
   
   @keyframes scroll-down-anim {
