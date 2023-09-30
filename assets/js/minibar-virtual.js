@@ -109,22 +109,8 @@ $(document).ready(function () {
 
   // filter items on button click
   $('.filterable-button').on('click', 'button', function () {
-   
     var filterValue = $(this).attr('data-filter');
-  
     $grid.isotope({ filter: filterValue });
-    var filteredItems = $grid.isotope('getFilteredItemElements');
-    var filteredItemsLength = filteredItems.length;
-    if (filteredItemsLength < 6) {
-   
-      $('.show-all').hide();
-    }
-     if(filterValue === '*') {
-       $('.show-all').show();
-       console.log('here2');
-      $grid.isotope({ filter: ':nth-child(-n+6)' });
-    }
-
   });
 
   $('.testi-carousel').owlCarousel({
