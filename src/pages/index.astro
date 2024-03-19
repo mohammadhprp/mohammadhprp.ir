@@ -10,44 +10,24 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 
 const cactusTech: { desc: string; href: string; title: string }[] = [
 	{
-		desc: "Build fast websites, faster.",
-		href: "https://astro.build",
-		title: "Astro",
+		desc: "Find the best place to work for the next few hours.",
+		href: "https://cozycorner.ir",
+		title: "Cozy Corner",
 	},
 	{
-		desc: "Rapidly build modern websites without ever leaving your HTML.",
-		href: "https://tailwindcss.com",
-		title: "Tailwind CSS",
+		desc: "Streamline vehicle service management with a user-friendly platform.",
+		href: "https://onlinetaviz.ir",
+		title: "Online Taviz",
 	},
 	{
-		desc: "Simple and easy-to-use markup language.",
-		href: "https://www.markdownguide.org/",
-		title: "Markdown",
+		desc: "A poweried-AI application to create images from text.",
+		href: "https://github.com/mohammadhprp/what-if",
+		title: "What If?",
 	},
 	{
-		desc: "Markdown for the component era.",
-		href: "https://mdxjs.com/",
-		title: "MDX",
-	},
-	{
-		desc: "Generating png Open Graph images for blog posts.",
-		href: "https://github.com/vercel/satori",
-		title: "Satori",
-	},
-	{
-		desc: "A fully static search library.",
-		href: "https://pagefind.app/",
-		title: "Pagefind",
-	},
-	{
-		desc: "An easy to use Icon component for Astro.",
-		href: "https://github.com/natemoo-re/astro-icon#readme",
-		title: "Astro Icon",
-	},
-	{
-		desc: "Highly customisable source code & syntax highlighter",
-		href: "https://expressive-code.com/",
-		title: "Expressive Code",
+		desc: "E-commerce with Django REST Framework.",
+		href: "https://github.com/mohammadhprp/smartStore",
+		title: "Smart Store",
 	},
 ];
 ---
@@ -56,9 +36,8 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 	<section>
 		<h1 class="title mb-6">Hello World!</h1>
 		<p class="mb-4">
-			Hi, I’m a theme for Astro, an example of how you can use this starter to create a personal
-			blog. If you want to know more about how you can customise me, add more posts, and make it
-			your own, click on the github icon link below and it will take you to my repo.
+			Hi, I'm Mohammad, a human full-stack software engineer with expertise in machine learning.
+			When I'm not coding, I enjoy delving into the captivating worlds of movies and books.
 		</p>
 		<SocialList />
 	</section>
@@ -75,7 +54,7 @@ const cactusTech: { desc: string; href: string; title: string }[] = [
 		</ul>
 	</section>
 	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Technologies</h2>
+		<h2 class="title mb-4 text-xl">Projects</h2>
 		<dl class="space-y-4">
 			{
 				cactusTech.map(({ desc, href, title }) => (
