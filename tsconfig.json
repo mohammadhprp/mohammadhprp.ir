@@ -2,7 +2,6 @@
 	"extends": "astro/tsconfigs/strict",
 	"compilerOptions": {
 		"baseUrl": ".",
-		"strict": false,
 		"noImplicitAny": false,
 		"strictNullChecks": true,
 		"lib": ["es2022", "dom", "dom.iterable"],
