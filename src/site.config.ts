@@ -4,7 +4,7 @@ import type { AstroExpressiveCodeOptions } from "astro-expressive-code";
 export const siteConfig: SiteConfig = {
 	author: "Mohammadhprp",
 	title: "Personal website",
-	description: "Hi, I'm Mohammad, a human full-stack software engineer...",
+	description: "Hi, I'm Mohammad, a full-stack software engineer...",
 	lang: "en-GB",
 	ogLocale: "en_GB",
 	date: {
