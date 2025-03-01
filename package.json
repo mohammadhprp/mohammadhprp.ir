@@ -17,7 +17,7 @@
 		"@astrojs/sitemap": "3.2.1",
 		"@astrojs/tailwind": "5.1.4",
 		"astro": "^4.16.8",
-		"astro-expressive-code": "^0.38.1",
+		"astro-expressive-code": "^0.40.2",
 		"astro-icon": "^1.1.1",
 		"rehype-external-links": "^3.0.0",
 		"satori": "0.12.0",
