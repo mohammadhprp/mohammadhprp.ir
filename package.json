@@ -15,7 +15,7 @@
 		"@astrojs/mdx": "3.1.9",
 		"@astrojs/rss": "4.0.10",
 		"@astrojs/sitemap": "3.2.1",
-		"@astrojs/tailwind": "5.1.4",
+		"@astrojs/tailwind": "6.0.2",
 		"astro": "^4.16.8",
 		"astro-expressive-code": "^0.38.1",
 		"astro-icon": "^1.1.1",
