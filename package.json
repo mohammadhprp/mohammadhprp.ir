@@ -14,7 +14,7 @@
 		"@astrojs/check": "^0.9.2",
 		"@astrojs/mdx": "3.1.9",
 		"@astrojs/rss": "4.0.10",
-		"@astrojs/sitemap": "3.2.1",
+		"@astrojs/sitemap": "3.3.0",
 		"@astrojs/tailwind": "5.1.4",
 		"astro": "^4.16.8",
 		"astro-expressive-code": "^0.38.1",
