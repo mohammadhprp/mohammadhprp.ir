@@ -96,7 +96,7 @@ export default function Home() {
               curious explorer in the flow of learning.
               </span>
               <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-                Hey, I'm Mohammad
+              Software Engineer
               </h1>
               <p className="text-lg text-muted-foreground sm:max-w-2xl">
                 Hey there, I&apos;m Mohammad—forever learning, building intelligent
