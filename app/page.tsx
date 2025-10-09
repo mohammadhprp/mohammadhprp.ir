@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { ThemeToggle } from "@/components/theme-toggle";
@@ -35,19 +36,37 @@ const roadmap = [
 
 const projects = [
   {
-    title: "AI Note Taker",
-    summary: "Captures study sessions and summarizes insights automatically.",
-    tech: ["Next.js", "OpenAI", "Supabase"],
+    title: "Brainstorm",
+    summary:
+      "Turns a single idea into an MVP blueprint—stack, milestones, and delivery timeline.",
+    tech: ["Python", "LangChain", "Next.js", "Postgres"],
+    href: "https://brainstorm.mohammadhprp.ir",
+    image: {
+      src: "/images/projects/brainstorm.png",
+      alt: "Brainstorm MVP planner interface showcasing scoped milestones.",
+    },
   },
   {
-    title: "Micro UI Lab",
-    summary: "Explorations of interaction patterns built with accessible primitives.",
-    tech: ["shadcn/ui", "Radix", "Tailwind"],
+    title: "Lens",
+    summary:
+      "Computer vision model that classifies food imagery across 101 categories with confidence cues.",
+    tech: ["Python", "Torch", "Hugging Face Spaces"],
+    href: "https://huggingface.co/spaces/mohammadhprp/lens",
+    image: {
+      src: "/images/projects/lens.png",
+      alt: "Lens prediction view labeling food photography by cuisine.",
+    },
   },
   {
-    title: "Learning Graph",
-    summary: "Visualizes concepts I’m connecting across books, videos, and code.",
-    tech: ["D3.js", "TypeScript", "Edge Functions"],
+    title: "Pulse",
+    summary:
+      "Event-driven telemetry pipeline for real-time analytics across distributed systems.",
+    tech: ["Golang", "Kafka", "ClickHouse"],
+    href: "https://github.com/mohammadhprp/pulse",
+    image: {
+      src: "/images/projects/pulse.png",
+      alt: "Pulse dashboard streaming service metrics in real time.",
+    },
   },
 ];
 
@@ -73,15 +92,15 @@ export default function Home() {
         <main className="flex flex-1 flex-col gap-16 sm:gap-20">
           <section className="flex flex-col gap-10">
             <div className="flex flex-col gap-6">
-              <span className="text-sm uppercase tracking-wide text-muted-foreground">
-                Curious. In the flow.
+              <span className="text-sm tracking-wide text-muted-foreground">
+              curious explorer in the flow of learning.
               </span>
               <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl">
-                Software Engineer
+                Hey, I'm Mohammad
               </h1>
               <p className="text-lg text-muted-foreground sm:max-w-2xl">
-                Forever learning. Building intelligent tools and sharing the
-                journey.
+                Hey there, I&apos;m Mohammad—forever learning, building intelligent
+                tools, and sharing the journey.
               </p>
               <div className="flex flex-wrap items-center gap-4">
                 <Button asChild className="group">
@@ -143,29 +162,43 @@ export default function Home() {
             </div>
             <div className="grid gap-6 md:grid-cols-3">
               {projects.map((project) => (
-                <Card
+                <Link
                   key={project.title}
-                  className="group flex h-full flex-col overflow-hidden border-border/60 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                  href={project.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  prefetch={false}
+                  aria-label={`${project.title} project · opens in new tab`}
+                  className="group block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  <div className="relative h-40 w-full overflow-hidden bg-gradient-to-br from-muted via-muted to-accent/50">
-                    <div className="absolute inset-0 animate-pulseFlow bg-gradient-to-r from-primary/30 via-secondary/30 to-primary/20 opacity-60 motion-reduce:animate-none" />
-                  </div>
-                  <CardHeader className="flex flex-1 flex-col gap-3">
-                    <div>
-                      <CardTitle className="text-lg font-semibold">
-                        {project.title}
-                      </CardTitle>
-                      <CardDescription>{project.summary}</CardDescription>
+                  <Card className="flex h-full flex-col overflow-hidden border-border/60 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                    <div className="relative h-40 w-full overflow-hidden">
+                      <Image
+                        src={project.image.src}
+                        alt={project.image.alt}
+                        fill
+                        className="object-cover transition-transform duration-300 group-hover:scale-[1.02] motion-reduce:transition-none"
+                        sizes="(min-width: 768px) 33vw, 100vw"
+                        priority={project.title === "Brainstorm"}
+                      />
                     </div>
-                  </CardHeader>
-                  <CardContent className="flex flex-wrap gap-2 pt-0">
-                    {project.tech.map((tech) => (
-                      <Badge key={tech} variant="outline">
-                        {tech}
-                      </Badge>
-                    ))}
-                  </CardContent>
-                </Card>
+                    <CardHeader className="flex flex-1 flex-col gap-3">
+                      <div>
+                        <CardTitle className="text-lg font-semibold transition-colors group-hover:text-primary">
+                          {project.title}
+                        </CardTitle>
+                        <CardDescription>{project.summary}</CardDescription>
+                      </div>
+                    </CardHeader>
+                    <CardContent className="flex flex-wrap gap-2 pt-0">
+                      {project.tech.map((tech) => (
+                        <Badge key={tech} variant="outline">
+                          {tech}
+                        </Badge>
+                      ))}
+                    </CardContent>
+                  </Card>
+                </Link>
               ))}
             </div>
           </section>
@@ -200,7 +233,7 @@ export default function Home() {
             <ul className="flex flex-wrap items-center gap-4 text-sm font-medium">
               <li>
                 <Link
-                  href="https://github.com"
+                  href="https://github.com/mohammadhprp"
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
@@ -210,7 +243,7 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="https://www.linkedin.com"
+                  href="https://www.linkedin.com/mohammadhprp"
                   target="_blank"
                   rel="noreferrer"
                   className="transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
@@ -220,10 +253,12 @@ export default function Home() {
               </li>
               <li>
                 <Link
-                  href="mailto:hello@mohammadhprp.ir"
+                  href="https://x.com/mohammadhprp"
+                  target="_blank"
+                  rel="noreferrer"
                   className="transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
-                  Email
+                  X
                 </Link>
               </li>
             </ul>
