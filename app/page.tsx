@@ -79,7 +79,7 @@ export default function Home() {
             href="/"
             className="text-sm font-medium tracking-tight text-muted-foreground transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
           >
-            Software Engineer
+            <span className="text-base font-semibold">Perpetually in beta</span>
           </Link>
           <div className="flex items-center gap-3">
             <Badge variant="secondary" className="shadow-xs">
