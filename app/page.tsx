@@ -40,7 +40,7 @@ const projects = [
     summary:
       "Turns a single idea into an MVP blueprint—stack, milestones, and delivery timeline.",
     tech: ["Python", "LangChain", "Next.js", "Postgres"],
-    href: "https://brainstorm.0x0.ir",
+    href: "https://brainstorm.0x0x.ir",
     image: {
       src: "/images/projects/brainstorm.png",
       alt: "Brainstorm MVP planner interface showcasing scoped milestones.",
