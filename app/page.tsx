@@ -36,6 +36,36 @@ const roadmap = [
 
 const projects = [
   {
+    title: "Agent Memo",
+    summary: "Activity layer for AI agents",
+    tech: ["MCP", "WorkOS", "Cloudflare D1"],
+    href: "https://agent-memo.servix.workers.dev/",
+    image: {
+      src: "/images/projects/agent-memo.png",
+      alt: "Agent Memo activity layer for AI agents.",
+    },
+  },
+    {
+    title: "System Prompt",
+    summary: "AI Coding Agent Framework",
+    tech: ["AI Agents", "CLI", "Open Source"],
+    href: "https://github.com/mohammadhprp/system-prompt",
+    image: {
+      src: "/images/projects/system-prompt.png",
+      alt: "System Prompt AI coding agent framework interface.",
+    },
+  },
+  {
+    title: "Parry AI",
+    summary: "Create Ads with AI",
+    tech: ["AI", "Advertising", "Web App"],
+    href: "https://parry.0x0x.ir/",
+    image: {
+      src: "/images/projects/parry.png",
+      alt: "Parry AI ad creation interface.",
+    },
+  }
+  {
     title: "Brainstorm",
     summary:
       "Turns a single idea into an MVP blueprint—stack, milestones, and delivery timeline.",
