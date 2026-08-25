@@ -64,7 +64,7 @@ const projects = [
       src: "/images/projects/parry.png",
       alt: "Parry AI ad creation interface.",
     },
-  }
+  },
   {
     title: "Brainstorm",
     summary:
